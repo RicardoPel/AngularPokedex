@@ -1,0 +1,12 @@
+<div class="buscador">
+  <form  [formGroup]="buscadorFormulario">
+    <!-- termino es un elemento del grupo del formulario  -->
+    <input formControlName="termino" type="text" name="buscaPokemon" id="buscaPokemon"> 
+    <button (click)="buscar()" >icono de buscar</button>
+  </form>
+  <ul>
+    <li *ngFor="let pokemon of pokemons">
+      {{ pokemon.name }}
+    </li>
+  </ul>
+</div>

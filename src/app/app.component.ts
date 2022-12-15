@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'pokedex';
+  title = 'pokedex'; // public, private can be used in the variables, pubic allows to use this variable in the template instead of private that lets you use the variable only here
 }
